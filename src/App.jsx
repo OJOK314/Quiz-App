@@ -1,102 +1,103 @@
-import React, { useState } from 'react'
-import "./App.css"
-
+import React, { useState } from "react";
+import "./App.css";
 
 const Questions = [
-    {
-    questionText:'what is the capital city of franch',
-    answerOption:[
-      {answerText:"kampala",iscorrect: false},
-       {answerText:"london",iscorrect: false},
-        {answerText:"paris",iscorrect: true},
-         {answerText:"kampala",iscorrect: false},
+  {
+    questionText: "What is the capital city of France?",
+    answerOptions: [
+      { answerText: "Kampala", isCorrect: false },
+      { answerText: "London", isCorrect: false },
+      { answerText: "Paris", isCorrect: true },
+      { answerText: "Dublin", isCorrect: false },
     ],
   },
-
-
-    {
-    questionText:'who is a CEO of Tesla',
-    answerOption:[
-      {answerText:"jeff",iscorrect: false},
-       {answerText:"elon",iscorrect: true},
-        {answerText:"bill",iscorrect: true},
-         {answerText:"kampala",iscorrect: false},
+  {
+    questionText: "Who is the CEO of Tesla?",
+    answerOptions: [
+      { answerText: "Jeff Bezos", isCorrect: false },
+      { answerText: "Elon Musk", isCorrect: true },
+      { answerText: "Bill Gates", isCorrect: false },
+      { answerText: "Mark Zuckerberg", isCorrect: false },
     ],
   },
+];
 
-    {
-    questionText:'what is the capital city of indian',
-    answerOption:[
-      {answerText:"jinja",iscorrect: false},
-       {answerText:"london",iscorrect: false},
-        {answerText:"mbarara",iscorrect: true},
-         {answerText:"kampala",iscorrect: false},
-    ]
-  },
+function App() {
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [answered, setAnswered] = useState(false);
+  const [selectedAnswer, setSelectedAnswer] = useState(null);
+  const [score, setScore] = useState(0);
 
-    {
-    questionText:'what is the capital city of afganistan',
-    answerOption:[
-      {answerText:"dehli",iscorrect: false},
-       {answerText:"london",iscorrect: false},
-        {answerText:"kabul",iscorrect: true},
-         {answerText:"dublin",iscorrect: false},
-    ]
-  },
+  const handleAnswer = (index, isCorrect) => {
+    setAnswered(true);
+    setSelectedAnswer(index);
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+  };
 
-    {
-    questionText:'what is the capital city of pakistan',
-    answerOption:[
-      {answerText:"gulu",iscorrect: false},
-       {answerText:"islambad",iscorrect: false},
-        {answerText:"lira",iscorrect: true},
-         {answerText:"kla",iscorrect: false},
-    ]
-  },
-
-
-   {
-    questionText:'what is the capital city of pakistan',
-    answerOption:[
-      {answerText:"gulu",iscorrect: false},
-       {answerText:"islambad",iscorrect: false},
-        {answerText:"lira",iscorrect: true},
-         {answerText:"kla",iscorrect: false},
-    ]
-  },
-]
-
-
-function App(){
-  
-
- const [currentQuestion, setCurrentQuestion] = useState(0)
-
- const NextQuestion =()=>{
-  setCurrentQuestion(currentQuestion + 1)
- }
-
+  const nextQuestion = () => {
+    if (currentQuestion < Questions.length - 1) {
+      setAnswered(false);
+      setSelectedAnswer(null);
+      setCurrentQuestion(currentQuestion + 1);
+    } else {
+      alert(`Quiz finished! Your score: ${score}/${Questions.length}`);
+    }
+  };
 
   return (
-    
-  
-  <div className='App'>
-    <div className='container'>Quiz App</div>
-    <div className='div-container'>
- <div className='question'>{Questions[currentQuestion]. questionText}</div>
- {Questions[currentQuestion].answerOption.map((Option,index) =>(
- <button className='button'>{Option.answerText}</button>
-))}
+    <div className="App">
+      <div className="quiz-container">
+        <h1 className="title">🌍 Quiz App</h1>
 
-<button className='button' style={{backgroundColor:"green"}}
-onClick={NextQuestion}
->Next Question</button>
-<p className='button' style={{backgroundColor:"Gray", textAlign:"center"}}>{ `Question ${currentQuestion + 1} of  ${Questions.length}`} </p>
+        <div className="question-card">
+          <h2 className="question-text">
+            {Questions[currentQuestion].questionText}
+          </h2>
+
+          <div className="options">
+            {Questions[currentQuestion].answerOptions.map((option, index) => {
+              let btnClass = "option-btn";
+              if (answered) {
+                if (option.isCorrect) {
+                  btnClass += " correct"; // ✅ green
+                } else if (selectedAnswer === index) {
+                  btnClass += " wrong"; // ❌ red
+                } else {
+                  btnClass += " neutral"; // 🚫 gray
+                }
+              }
+
+              return (
+                <button
+                  key={index}
+                  onClick={() => handleAnswer(index, option.isCorrect)}
+                  className={btnClass}
+                  disabled={answered}
+                >
+                  {option.answerText}
+                </button>
+              );
+            })}
+          </div>
+
+          <button
+            className={`next-btn ${answered ? "active" : "disabled"}`}
+            disabled={!answered}
+            onClick={nextQuestion}
+          >
+            Next Question →
+          </button>
+
+          <p className="progress">
+            Question {currentQuestion + 1} of {Questions.length}
+          </p>
+          <p className="score">Score: {score} / {Questions.length}</p>
+        </div>
+      </div>
     </div>
-
-  </div>
-     
-  )
+  );
 }
 
-export default App
+export default App;
