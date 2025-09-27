@@ -25,7 +25,7 @@ const Questions = [
     questionText: "3) Country Without a Rive?",
     answerOptions: [
       { answerText: "a) Libiya", isCorrect: false },
-      { answerText: "b) Sudan", isCorrect: true },
+      { answerText: "b) Sudan", isCorrect: false },
       { answerText: "c) Kenya", isCorrect: false },
       { answerText: "d) Saudi Arabia", isCorrect: true },
     ],
@@ -95,7 +95,7 @@ const Questions = [
    {
     questionText: "Mention the longest River in the world?",
     answerOptions: [
-      { answerText: "nile", isCorrect: true },
+      { answerText: "Nile", isCorrect: true },
       { answerText: "Amazon", isCorrect: false },
       { answerText: "mississippi", isCorrect: false },
       { answerText: "Yenisei", isCorrect: false },
@@ -123,7 +123,7 @@ function App() {
       setSelectedAnswer(null);
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      alert(`Your Quiz Questions are finished thank for Participation! Your score: ${score}/${Questions.length}`);
+      alert(`Your Quiz Questions are finished! Your score: ${score}/${Questions.length}`);
     }
   };
 
