@@ -12,12 +12,12 @@ const Questions = [
     ],
   },
   {
-    questionText: "Who is the CEO of Tesla?",
+    questionText: " Smallest country in the world?",
     answerOptions: [
-      { answerText: "Jeff Bezos", isCorrect: false },
-      { answerText: "Elon Musk", isCorrect: true },
-      { answerText: "Bill Gates", isCorrect: false },
-      { answerText: "Mark Zuckerberg", isCorrect: false },
+      { answerText: "Burundi", isCorrect: false },
+      { answerText: "Vatican city", isCorrect: true },
+      { answerText: "haiti", isCorrect: false },
+      { answerText: "Rwanda", isCorrect: false },
     ],
   },
 
@@ -66,9 +66,9 @@ const Questions = [
     answerOptions: [
       
       { answerText: "Qatar", isCorrect: true },
-      { answerText: "Elon Musk", isCorrect: true },
-      { answerText: "Bill Gates", isCorrect: false },
-      { answerText: "Mark Zuckerberg", isCorrect: false },
+      { answerText: "Zambia", isCorrect: false},
+      { answerText: "RDC congo", isCorrect: false },
+      { answerText: "Cade", isCorrect: false },
     ],
   },
 
@@ -83,22 +83,22 @@ const Questions = [
   },
 
    {
-    questionText: "Who is the CEO of Tesla?",
+    questionText: "The higest mountain in the world?",
     answerOptions: [
-      { answerText: "Jeff Bezos", isCorrect: false },
-      { answerText: "Elon Musk", isCorrect: true },
-      { answerText: "Bill Gates", isCorrect: false },
-      { answerText: "Mark Zuckerberg", isCorrect: false },
+      { answerText: "Mt mororto", isCorrect: false },
+      { answerText: "Mt everest", isCorrect: true },
+      { answerText: "Mt elgon", isCorrect: false },
+      { answerText: " Mt Rwenzori", isCorrect: false },
     ],
   },
 
    {
-    questionText: "Who is the CEO of Tesla?",
+    questionText: "Mention the longest River in the world?",
     answerOptions: [
-      { answerText: "Jeff Bezos", isCorrect: false },
-      { answerText: "Elon Musk", isCorrect: true },
-      { answerText: "Bill Gates", isCorrect: false },
-      { answerText: "Mark Zuckerberg", isCorrect: false },
+      { answerText: "nile", isCorrect: true },
+      { answerText: "Amazon", isCorrect: false },
+      { answerText: "mississippi", isCorrect: false },
+      { answerText: "Yenisei", isCorrect: false },
     ],
   },
 ];
