@@ -20,6 +20,87 @@ const Questions = [
       { answerText: "Mark Zuckerberg", isCorrect: false },
     ],
   },
+
+    {
+    questionText: "Country Without a Rive?",
+    answerOptions: [
+      { answerText: "Libiya", isCorrect: false },
+      { answerText: "Sudan", isCorrect: true },
+      { answerText: "Kenya", isCorrect: false },
+      { answerText: "Saudi Arabia", isCorrect: true },
+    ],
+  },
+
+    {
+    questionText: "which country without an Army?",
+    answerOptions: [
+      { answerText: "congo", isCorrect: false },
+      { answerText: "Rwanda", isCorrect: true },
+      { answerText: "Costa Rica", isCorrect: false },
+      { answerText: "somalia", isCorrect: false },
+    ],
+  },
+
+   {
+    questionText: "Who is the CEO of Tesla?",
+    answerOptions: [
+      { answerText: "Jeff Bezos", isCorrect: false },
+      { answerText: "Elon Musk", isCorrect: true },
+      { answerText: "Bill Gates", isCorrect: false },
+      { answerText: "Mark Zuckerberg", isCorrect: false },
+    ],
+  },
+
+   {
+    questionText: "Country Without Police?",
+    answerOptions: [
+      { answerText: "kwati", isCorrect: false },
+      { answerText: "japan", isCorrect: false},
+      { answerText: "Uganad", isCorrect: false },
+      { answerText: "Vatican City", isCorrect: true},
+    ],
+  },
+
+   {
+    questionText: "Countries Without a Lake?",
+    answerOptions: [
+      
+      { answerText: "Qatar", isCorrect: true },
+      { answerText: "Elon Musk", isCorrect: true },
+      { answerText: "Bill Gates", isCorrect: false },
+      { answerText: "Mark Zuckerberg", isCorrect: false },
+    ],
+  },
+
+   {
+    questionText: "Countries Entirely in the Desert?",
+    answerOptions: [
+      { answerText: "pakistan", isCorrect: false },
+      { answerText: "Oman", isCorrect: true },
+      { answerText: "brazvil", isCorrect: false },
+      { answerText: " Zuckerberg", isCorrect: false },
+    ],
+  },
+
+   {
+    questionText: "Who is the CEO of Tesla?",
+    answerOptions: [
+      { answerText: "Jeff Bezos", isCorrect: false },
+      { answerText: "Elon Musk", isCorrect: true },
+      { answerText: "Bill Gates", isCorrect: false },
+      { answerText: "Mark Zuckerberg", isCorrect: false },
+    ],
+  },
+
+   {
+    questionText: "Who is the CEO of Tesla?",
+    answerOptions: [
+      { answerText: "Jeff Bezos", isCorrect: false },
+      { answerText: "Elon Musk", isCorrect: true },
+      { answerText: "Bill Gates", isCorrect: false },
+      { answerText: "Mark Zuckerberg", isCorrect: false },
+    ],
+  },
 ];
 
 function App() {
@@ -42,7 +123,7 @@ function App() {
       setSelectedAnswer(null);
       setCurrentQuestion(currentQuestion + 1);
     } else {
-      alert(`Quiz finished! Your score: ${score}/${Questions.length}`);
+      alert(`Your Quiz Questions are finished thank for Participation! Your score: ${score}/${Questions.length}`);
     }
   };
 
