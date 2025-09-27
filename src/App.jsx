@@ -3,92 +3,92 @@ import "./App.css";
 
 const Questions = [
   {
-    questionText: "What is the capital city of France?",
+    questionText: "1) What is the capital city of France?",
     answerOptions: [
-      { answerText: "Kampala", isCorrect: false },
-      { answerText: "London", isCorrect: false },
-      { answerText: "Paris", isCorrect: true },
-      { answerText: "Dublin", isCorrect: false },
+      { answerText: "a)   Kampala", isCorrect: false },
+      { answerText: "b)   London", isCorrect: false },
+      { answerText: "c)   Paris", isCorrect: true },
+      { answerText: "d)   Dublin", isCorrect: false },
     ],
   },
   {
-    questionText: " Smallest country in the world?",
+    questionText: "2) Smallest country in the world?",
     answerOptions: [
-      { answerText: "Burundi", isCorrect: false },
-      { answerText: "Vatican city", isCorrect: true },
-      { answerText: "haiti", isCorrect: false },
-      { answerText: "Rwanda", isCorrect: false },
+      { answerText: "a) Burundi", isCorrect: false },
+      { answerText: "b) Vatican city", isCorrect: true },
+      { answerText: "c) haiti", isCorrect: false },
+      { answerText: "d) Rwanda", isCorrect: false },
     ],
   },
 
     {
-    questionText: "Country Without a Rive?",
+    questionText: "3) Country Without a Rive?",
     answerOptions: [
-      { answerText: "Libiya", isCorrect: false },
-      { answerText: "Sudan", isCorrect: true },
-      { answerText: "Kenya", isCorrect: false },
-      { answerText: "Saudi Arabia", isCorrect: true },
+      { answerText: "a) Libiya", isCorrect: false },
+      { answerText: "b) Sudan", isCorrect: true },
+      { answerText: "c) Kenya", isCorrect: false },
+      { answerText: "d) Saudi Arabia", isCorrect: true },
     ],
   },
 
     {
-    questionText: "which country without an Army?",
+    questionText: "4) which country without an Army?",
     answerOptions: [
-      { answerText: "congo", isCorrect: false },
-      { answerText: "Rwanda", isCorrect: true },
-      { answerText: "Costa Rica", isCorrect: false },
-      { answerText: "somalia", isCorrect: false },
+      { answerText: "a) congo", isCorrect: false },
+      { answerText: "b) Rwanda", isCorrect: true },
+      { answerText: "c) Costa Rica", isCorrect: false },
+      { answerText: "d) somalia", isCorrect: false },
     ],
   },
 
    {
-    questionText: "Who is the CEO of Tesla?",
+    questionText: "5) Who is the CEO of Tesla?",
     answerOptions: [
-      { answerText: "Jeff Bezos", isCorrect: false },
-      { answerText: "Elon Musk", isCorrect: true },
-      { answerText: "Bill Gates", isCorrect: false },
-      { answerText: "Mark Zuckerberg", isCorrect: false },
+      { answerText: "a) Jeff Bezos", isCorrect: false },
+      { answerText: "b) Elon Musk", isCorrect: true },
+      { answerText: "c) Bill Gates", isCorrect: false },
+      { answerText: "d) Mark Zuckerberg", isCorrect: false },
     ],
   },
 
    {
-    questionText: "Country Without Police?",
+    questionText: "6)Country Without Police?",
     answerOptions: [
-      { answerText: "kwati", isCorrect: false },
-      { answerText: "japan", isCorrect: false},
-      { answerText: "Uganad", isCorrect: false },
-      { answerText: "Vatican City", isCorrect: true},
+      { answerText: "a) kwati", isCorrect: false },
+      { answerText: "b) japan", isCorrect: false},
+      { answerText: "c) Uganad", isCorrect: false },
+      { answerText: "d) Vatican City", isCorrect: true},
     ],
   },
 
    {
-    questionText: "Countries Without a Lake?",
+    questionText: "7) Countries Without a Lake?",
     answerOptions: [
       
-      { answerText: "Qatar", isCorrect: true },
-      { answerText: "Zambia", isCorrect: false},
-      { answerText: "RDC congo", isCorrect: false },
-      { answerText: "Cade", isCorrect: false },
+      { answerText: "a) Qatar", isCorrect: true },
+      { answerText: "b) Zambia", isCorrect: false},
+      { answerText: "c) RDC congo", isCorrect: false },
+      { answerText: "d) Cade", isCorrect: false },
     ],
   },
 
    {
-    questionText: "Countries Entirely in the Desert?",
+    questionText: "8) Countries Entirely in the Desert?",
     answerOptions: [
-      { answerText: "pakistan", isCorrect: false },
-      { answerText: "Oman", isCorrect: true },
-      { answerText: "brazvil", isCorrect: false },
-      { answerText: " Zuckerberg", isCorrect: false },
+      { answerText: "a) pakistan", isCorrect: false },
+      { answerText: "b) Oman", isCorrect: true },
+      { answerText: "c) brazvil", isCorrect: false },
+      { answerText: "d) Zuckerberg", isCorrect: false },
     ],
   },
 
    {
-    questionText: "The higest mountain in the world?",
+    questionText: "9) The higest mountain in the world?",
     answerOptions: [
-      { answerText: "Mt mororto", isCorrect: false },
-      { answerText: "Mt everest", isCorrect: true },
-      { answerText: "Mt elgon", isCorrect: false },
-      { answerText: " Mt Rwenzori", isCorrect: false },
+      { answerText: "a) Mt mororto", isCorrect: false },
+      { answerText: "b) Mt everest", isCorrect: true },
+      { answerText: "c) Mt elgon", isCorrect: false },
+      { answerText: "d) Mt Rwenzori", isCorrect: false },
     ],
   },
 
